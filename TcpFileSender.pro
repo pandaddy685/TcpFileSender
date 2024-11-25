@@ -13,6 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        tcpfilesender.cpp
+        tcpfilesender.cpp \
+        tcpfileserver.cpp
 
-HEADERS  += tcpfilesender.h
+HEADERS  += tcpfilesender.h \
+    tcpfileserver.h
+
+SUBDIRS += \
+    TcpFileServer.pro
